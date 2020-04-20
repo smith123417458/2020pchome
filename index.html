@@ -1,0 +1,738 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<style> 
+    a{font-size: 9px;}
+    body{
+        width: 1340px;
+        height: auto;
+    }
+    .logo {
+        background: url(img2/lo.png);
+        background-position: 0px 0px;
+        width: 165px;
+        height: 25px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        overflow: hidden;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    .content {
+        width: 93%;
+        height: 1500px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        width: 1072px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+        left: 165px;
+    }
+
+    .mainnav {
+        width: 396px;
+        height: 24px;
+        float: left;
+    }
+
+    .mainnav li a {
+        margin-left: 5px;
+        border-left: 1px solid gray;
+        font-size: 12px;
+        color: gray;
+        padding-left: 3px;
+
+    }
+
+    .sidenav {
+        margin-left: 240px;
+        width: 431px;
+        height: 24px;
+        float: left;
+    }
+
+    .sidenav li a {
+        margin-left: 5px;
+        font-size: 12px;
+        color: gray;
+    }
+
+    .sidenav span {
+        color: red;
+    }
+    .sidenav span::after{
+        background:url(img2/he.png);
+        display: inline-block;
+        top: 3px;
+        margin-left: 2px;
+        width: 22px;
+        height: 14px;
+        content:'';
+    }
+    .header {
+        width: 1240px;
+        height: 38px;
+
+        position: relative;
+        margin: 0 auto;
+    }
+    .top {
+        width: 1240px;
+        height: 107px;
+        border: 1px solid rgb(231, 228, 228);
+        margin: 0 auto;
+        position: relative;
+    }
+    .block{
+        margin-top: 2px;
+        height: 108px;
+        background: url(img2/bg.png) 0 -170px;
+        z-index: 1;
+    }
+    .top input {
+        margin: 5px;
+        width: 130px;
+        height: 15px;
+    }
+
+    .first {
+        width: 220px;
+        height: 105px;
+        position: relative;
+        float: left;
+
+    }
+
+    .f1 {
+        width: 220px;
+        height: 15px;
+    }
+
+    .find {
+        width: 27px;
+        height: 13px;
+        border: 1px solid #000;
+        position: absolute;
+        top: 23px;
+        right: 44px;
+        background-color: rgb(230, 230, 230);
+        font-size: 12px;
+    }
+
+    .cust {
+        background: url(img2/he.png);
+        background-position: -175px -63px;
+        width: 216px;
+        height: 15px;
+    }
+
+
+    .first img {
+        margin-top: 13px;
+    }
+
+    .f1 span {
+        color: red;
+        font-size: 12PX;
+        margin-left: 10PX;
+    }
+
+    .f1 a {
+        color: gray;
+        font-size: 12px;
+        display: inline;
+        text-decoration: none;
+    }
+
+    .second {
+        background: url(img2/ro.png);
+        background-position: -5px -117px;
+        float: left;
+        width: 134px;
+        height: 108px;
+        
+    }
+    .b2{
+        width: 420px;
+        height: 90px;
+        border: 1px solid #000;
+        position: absolute;
+        top:0;
+        right: 1px
+
+    }
+    .b2 img {
+        position: absolute;
+        top: 17px;
+        right: 118px;
+    }
+    .b2 .art{
+        width: 104px;
+        height: 60px;
+        position: absolute;
+        top: 22px;
+        right: 5px;
+        font-size: 12px;
+         text-decoration: none; 
+    }
+    .b2 .art a{ 
+        text-decoration: none;
+    }
+    .b2 .art li{
+        margin-top:5px;
+        margin-left: 8px;
+    }
+    .b2> a{
+     display: block;
+     width: 420px;
+     height: 16px;
+     background:url(img2/hh.png) 0 -290px no-repeat;
+    }
+
+    .top2 {
+        width: 185px;
+        height: 490px;
+        margin-left: 0px;
+        float: left;
+    }
+
+    .top2 img {
+        margin-top: 5px;
+    }
+
+    .top3 {
+        width: 492px;
+        height: 490px;
+        margin-left: 10px;
+        float: left;
+    }
+
+    .top3 img {
+        margin-top: 5px;
+    }
+    .c11 {
+        /* display: block; */
+        width: 82px;
+        height: 30px;
+        overflow: hidden;
+        text-align: center;
+        background: url(img2/hp.png) -240px -140px;
+
+    }
+    .c12 {
+        /* display: block; */
+        width: 74px;
+        height: 30px;
+        overflow: hidden;
+        text-align: center;
+        background: url(img2/hp.png) -240px -200px;
+    }
+
+    .c13 {
+        /* display: block; */
+        width: 80px;
+        height: 30px;
+        overflow: hidden;
+        text-align: center;
+        background: url(img2/hp.png) -240px -170px;
+
+    }
+    .top31 {
+        height: 22px;   
+    }
+
+    .top31 a {
+        text-decoration: none;
+        color: gray;
+    }
+    .top31 li a:hover {
+        background-color: rgb(230, 132, 132);
+        color: aliceblue
+    }
+
+    .top32 {
+        width: 492px;
+        height: 22px;
+        background-color: rgb(255, 225, 225);
+    }
+
+    .top32 a {
+        text-decoration: none;
+    }
+    .top32 a {
+        color: gray;
+    }
+
+    .top32 li a:hover {
+        background-color: rgb(230, 132, 132);
+        color: aliceblue
+    }
+    .top33 {
+        width: 492px;
+        height: 290px;
+        border: 1px solid rgb(194, 194, 194);
+    }
+
+    .top34 {
+        width: 219px;
+        height: 76px;
+        border: 1px solid rgb(184, 184, 184);
+        float: left;
+        margin: 10px;
+    }
+
+    .top34 img {
+        float: left;
+    }
+
+    .artic {
+        width: 87px;
+        height: 76px;
+        float: left;
+    }
+
+    .artic a {
+        font-size: 12px;
+        color: blue;
+        text-decoration: none
+    }
+    .artic li{
+        margin: 3px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .top4 {
+        width: 296px;
+        height: 916px;
+        float: left;
+        margin-left: 10px;    
+        }
+
+    .top4 img {
+        margin-top: 5px;
+
+    }
+
+    .top41 {
+        width: 296px;
+        height: 16px;    
+    }
+
+    .top41 a {
+        text-decoration: none;
+        color: gray;
+        margin-top: 5px;
+    }
+
+    .top41 li {
+        margin-right: 0px;    
+    } 
+
+    .top41 li a:hover {
+        background-color: rgb(230, 132, 132);
+        color: aliceblue
+    }
+
+    .top42 {
+        width: 240px;
+        height: 166px;
+        margin: 25px;
+        margin-top: 10px;
+    }
+
+    .top5 {
+        width: 240px;
+        height: 800px;
+        float: left;
+        margin-left: 10px;
+    }
+    .top5 img{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .top51 {
+        width: 250px;
+        height: 18px;  
+    }
+
+    .top51 a {
+        text-decoration: none;
+        color: gray;
+        margin-left: 12px;
+    }
+
+    .top51 li {
+        margin-right: 0px;      
+    }
+
+
+    .top51 li a:hover {
+        background-color: rgb(230, 132, 132);
+        color: aliceblue
+    }
+
+    .top52 {
+        width:  215px;
+        height: 165x;    
+        margin: 17px;
+    }
+   
+    .top43{
+       width: 295px;
+       height: 164px;   
+   }
+  .top431{
+      position: relative;
+       width: 294px;
+       height: 22px;
+       background-image: url(img2/bar.png)
+  }
+
+  .top4311{
+       position: relative;
+       width: 294px;
+       height: 22px;   
+       background-image: url(img2/bar.png);
+       background-position: 0 -180px;
+  }
+  .top4311:before{
+   content:'';
+   position: absolute;
+   left:89px;
+   display: inline-block;
+   width: 28px;
+   height: 22px;
+   background:url(img2/time.gif)
+  }
+   
+  .top431:before{
+   content:'';
+   position: absolute;
+   left:80px;
+   display: inline-block;
+   width: 28px;
+   height: 22px;
+   background:url(img2/time.gif)
+  }
+  
+  .top431 span{
+     display: block;
+     position: absolute;
+     bottom:0;
+     right: 12px;
+     width: 50px;
+     height: 18px;
+     background:url(img2/diti.gif)
+  }
+    .top432{
+        width: 151px;
+        height: 140px;
+        float: left;
+        background: rgb(241, 165, 165);
+    }
+    .top432 img{
+        margin: 10px;
+        margin-left:13px ;
+    }
+    .top433{
+        width: 140px;
+        height: 140px;
+        float: left;
+        background: rgb(251, 215, 221)
+    }
+    .top433 h5{
+        margin: 0;
+        padding: 0;
+        color: red;
+        margin-top: 11px;
+        margin-left: 11px;
+    }
+    .top433 strong{
+        color: red;
+        margin-left: 24px;
+        font-size: 21px;
+    }
+    .top433 a{
+        color: blue;
+        text-decoration: none;
+        font-size: 14px; 
+    }
+     .top433 .art{
+         width: 128px;
+         height: 30px;  
+         margin-left: 8px;
+         margin-bottom: 17px;
+     }
+</style>
+<body>
+<div class="header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+        <div class="mainnav">
+            <ul>
+                <li><a href=""> 線上購物 </a></li>
+                <li> <a href=" "> 24h購物 </a> </li>
+                <li> <a href=""> 購物中心 </a> </li>
+                <li> <a href=""> 書店 </a> </li>
+                <li> <a href=" "> 日木代購 </a> </li>
+                <li> <a href=""> 旅遊 </a> </li>
+            </ul>
+        </div>
+        <div class="sidenav">
+            <ul>
+                <li> <a href=""> <span>購物車</span> </a> </li>
+                <li> <a href=""> PcHome聯名卡 </a> </li>
+                <li> <a href=""> 折價券 </a> </li>
+                <li> <a href=""> 儲值 </a> </li>
+                <li> <a href=""> P幣 </a> </li>
+                <li> <a href=""> 現金積點 </a> </li>
+                <li> <a href=""> 顧客中心 </a> </li>
+                <li> <a href=""> 更多 </a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="top block ">
+   <!-- <sup class="sp"></sup> -->
+    <div class="first">
+        <div class="f1">
+            <a href="">設首頁 </a>
+            <span>購物滿$490 免運費</span>
+        </div>
+        <input type="text">
+        <div class="find">搜尋</div>
+        <div class="cust"></div>
+        <img src="img2/disc.jpg" width="220px" height="17px">
+    </div>
+    <div class="second"></div>
+    <img src="img2/b1.jpg" width="432px" height="90px">
+    <div class="b2">
+
+        <a href=""></a>
+        <img src="img2/b2.jpg" width="302px" height="70px">
+        <div class="art">
+              <ul>
+                  <li><a href=""> 刷卡限量優惠  </a></li>
+                  <li><a href=""> 指定卡滿額送11% </a> </li>
+                  <li> <a href="">最高期30期0利率</a></li>
+              </ul>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- ---------------------------------------------------------content------------------------------------------ -->
+<div class="content">
+    <div class="top2">
+        <img src="img2/b3.jpg" width="180px" height="46px">
+        <img src="img2/b7.jpg" width="180px" height="220px">
+        <img src="img2/b8.jpg" width="180px" height="220px">
+    </div>
+    <div class="top3">
+        <img src="img2/b4.jpg" width="492px" height="46px">
+        <div class="top31">
+            <ul>
+                <li class="c11"><a href="">個人電腦</a></li>
+                <li  class="c11"><a href="">零組件</a></li>
+                <li  class="c11"><a href="">電腦周邊</a></li>
+                <li class="c11"><a href="">數位影像</a></li>
+                <li  class="c11"><a href="">通訊手機</a></li>
+                <li  class="c11"><a href="">大家電</a></li>
+            </ul>
+        </div>
+        <img src="img2/b9.jpg" width="492" height="196">
+
+        <div class="top32">
+            <ul>
+                <li   class="c11"><a href="">小家電</a></li>
+                <li  class="c11"><a href="">食品自用</a></li>
+                <li  class="c11"><a href="">運動戶外</a></li>
+                <li  class="c11"><a href="">生活百貨</a></li>
+                <li   class="c11"><a href="">美妝保養</a></li>
+                <li  class="c11"><a href="">衣鞋包錶</a></li>
+            </ul>
+        </div>
+        <img src="img2/b10.jpg" width="492" height="196">
+        <img src="img2/b11.jpg" width="490" height="94">
+        <div class="top32">
+            <ul>
+                <li>精選頻道</li>
+            </ul>
+        </div>
+        <div class="top33">
+            <div class="top34">
+                <img src="img2/b12.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">超值C+M組合 </a></li>
+                        <li><a href=""> 顯卡送背包 </a></li>
+                        <li><a href=""> 主板送側背包 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top34">
+                <img src="img2/b15.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">Iphone限時賣</a></li>
+                        <li><a href=""> MacBook Pro </a></li>
+                        <li><a href=""> ipad Pro全系列 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top34">
+                <img src="img2/b13.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">fenix6旗艦登場 </a></li>
+                        <li><a href=""> 新生理期記錄 </a></li>
+                        <li><a href=""> 高爾夫訓練儀 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top34">
+                <img src="img2/b16.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">迎新party88折 </a></li>
+                        <li><a href=""> 峮峮個人寫真 </a></li>
+                        <li><a href=""> 漫畫滿千折百 </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top34">
+                <img src="img2/b14.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">s10送好禮</a></li>
+                        <li><a href=""> A70熱銷新機 </a></li>
+                        <li><a href=""> Galaxy fit e </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top34">
+                <img src="img2/b17.jpg" width="130" height="60">
+                <div class="artic">
+                    <ul>
+                        <li><a href="">行程最高折5千 </a></li>
+                        <li><a href=""> 機票即訂即開 </a></li>
+                        <li><a href=""> 全站12期0利率 </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="top4">
+        <img src="img2/b5.jpg" width="296px" height="46px">
+        <div class="top41">
+            <ul>
+                 <li class="c12"><a href="">狂閃HI購</a></li>
+                 <li class="c12"><a href="">冷熱都適用</a></li>
+                 <li class="c12"><a href="">秋香我來了</a></li>
+                 <li class="c12"><a href="">HomePod</a></li>
+            </ul>
+        </div>
+        <div class="top42">
+            <img src="img2/b18.jpg" width="250" height="165">
+        </div>
+        <div class="top43">
+            <div class="top431">
+            <span></span>
+            </div>
+
+            <div class="top432">
+                <img src="img2/b22.jpg" width="120" height="120" >
+            </div>
+            <div class="top433">
+                <h5>每天早上10點開買<br>
+                  限時限量破盤低買</h5><br>
+                <a href="">
+                    <div class="art">
+                    全幅機王限時降萬
+                    加碼送128G大禮
+                </div>
+                </a>
+                <strong>$69980
+                </strong>
+                <a href=""> 搶購 </a>
+            </div>
+        </div>
+        <div class="top43">
+                <div class="top4311">
+                <span></span>
+                </div>
+                <div class="top432">
+                    <img src="img2/b25.jpg" width="120" height="120" >
+                </div>
+                <div class="top433">
+                    <h5>週未特賣限時限量<br>
+                      週一早下10點準時回</h5><br>
+                    <a href="">
+                        <div class="art">
+                        9代i7Gtx1650獨顯
+                        降3千直升16G記憶體
+                    </div>
+                    </a>
+                    <strong>$34900
+                    </strong>
+                    <a href=""> 搶購 </a>
+                </div>
+            </div>
+    </div>
+    <div class="top5">
+        <img src="img2/b6.jpg" width="240px" height="46px">
+        <div class="top51">
+            <ul>
+                <li class="c13"><a href="">品牌代言人</a></li>
+                <li class="c13"><a href="">各種用品</a></li>
+                <li class="c13"><a href="">好康優惠</a></li>        
+            </ul>
+        </div>
+        <div class="top52">
+            <img src="img2/b21.jpg" width="215" height="165">
+        </div>
+        <div class="top51">
+                <ul>
+                     <li class="c13"><a href="">99嗨購</a></li>
+                     <li class="c13"><a href="">恰恰最終戰</a></li>
+                     <li class="c13"><a href="">智慧標籤</a></li>
+                </ul>
+            </div>
+         <div class="top52">
+            <img src="img2/b23.jpg" width="215" height="165">
+       </div> 
+       <div class="top51">
+            <ul>
+                    <li class="c13"><a href="">烤肉很輕鬆</a></li>
+                    <li class="c13"><a href="">各種用具</a></li>
+                    <li class="c13"><a href="">這裡買</a></li>
+            </ul>
+        </div>
+     <div class="top52">
+        <img src="img2/b24.jpg" width="215" height="165">
+   </div>
+    </div>
+</div>
+</body>
